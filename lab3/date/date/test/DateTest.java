@@ -145,4 +145,75 @@ class DateTest {
 
   }
 
+  // Coverage for Date
+  @Test
+  void nextDate_invalid_tc21() {
+    assertThrows(
+        IllegalArgumentException.class,
+        () -> new Date(2024, 2, 30));
+  }
+
+  @Test
+  void nextDate_invalid_tc22() {
+    assertThrows(
+        IllegalArgumentException.class,
+        () -> new Date(1500, 1, 32));
+  }
+
+  @Test
+  void nextDate_invalid_tc23() {
+    assertThrows(
+        IllegalArgumentException.class,
+        () -> new Date(1505, 4, 31));
+  }
+
+  @Test
+  void nextDate_invalid_tc24() {
+    assertThrows(
+        IllegalArgumentException.class,
+        () -> new Date(2024, -52, 30));
+  }
+
+  @Test
+  void nextDate_tc25() {
+    Date today = new Date(3456, 9, 29);
+    Date expectedTomorrow = new Date(3457, 9, 30);
+    assertNotEquals(expectedTomorrow, today.nextDate());
+  }
+
+  @Test
+  void nextDate_tc26() {
+    Date today = new Date(2025, 2, 28);
+    Date expectedTomorrow = new Date(2000, 3, 1);
+    assertNotEquals(expectedTomorrow, today.nextDate());
+  }
+
+  @Test
+  void nextDate_tc27() {
+    Date today = new Date(2000, 2, 28);
+    Date expectedTomorrow = new Date(2000, 3, 1);
+    assertNotEquals(expectedTomorrow, today.nextDate());
+  }
+
+  @Test
+  void nextDate_tc28() {
+    Date today = new Date(3456, 12, 30);
+    Date expectedTomorrow = new Date(3456, 12, 31);
+    assertEquals(expectedTomorrow.equals(today), today.equals(expectedTomorrow));
+  }
+
+  @Test
+  public void nextDate_tc29() {
+    Date date = new Date(2023, 6, 15);
+    String nonDateObject = "2023-06-15";
+    assertNotEquals(date, nonDateObject);
+  }
+
+  @Test
+  void nextDate_tc30() {
+    Date today = new Date(3456, 12, 31);
+    Date expectedTomorrow = new Date(3457, 1, 1);
+    assertEquals(expectedTomorrow.toString(), today.nextDate().toString());
+  }
+
 }
