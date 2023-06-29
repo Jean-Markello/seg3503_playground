@@ -34,7 +34,7 @@ class TicTest {
     void testMoveLegal() {
         Tic board = new Tic(3, 3);
         board.move(0, 1);
-        boolean move = board.move(0, 1);
+        boolean move = board.move(0, 2);
         assertEquals(move, true);
     }
 
