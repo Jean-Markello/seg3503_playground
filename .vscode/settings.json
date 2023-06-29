@@ -1,0 +1,11 @@
+{
+    "java.project.sourcePaths": [
+        "lab3/date/date/test",
+        "lab3/date/date/src",
+        "lab3/computation/computation/test",
+        "lab3/computation/computation/src",
+        "lab2/ecs/test",
+        "lab2/ecs/src",
+        "lab4/tic_java_sample_code/tic_java_sample_code"
+    ]
+}
