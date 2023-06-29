@@ -18,7 +18,6 @@ class TicTest {
 	@Test
     void testEmpty() {
         Tic board = new Tic(3, 3);
-        board.move(0, 1);
         assertEquals(board.isEmpty(), true);
     }
 
