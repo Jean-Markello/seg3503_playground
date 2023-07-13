@@ -6,6 +6,7 @@
         "lab3/computation/computation/src",
         "lab2/ecs/test",
         "lab2/ecs/src",
-        "lab4/tic_java_sample_code/tic_java_sample_code"
+        "lab4/tic_java_sample_code/tic_java_sample_code",
+        "lab5\\twitter\\twitter\\lib"
     ]
 }
