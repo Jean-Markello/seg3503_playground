@@ -1,0 +1,17 @@
+# Created at 2023-07-18T21:06:19.608
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2023-07-18T21:06:20.876
+Unexpected IOException: 7,1,selenium.ExampleSeleniumTest,test2,null,java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:25124\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-OK589P8'\002C ip: '192.168.2.11'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.1'\000ADriver info: driver.version: FirefoxDriver,null,java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:25124\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-OK589P8'\002C ip: '192.168.2.11'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.1'\000ADriver info: driver.version: FirefoxDriver,ExampleSeleniumTest.setUp:37 \00BB WebDriver java.net.ConnectException: Failed to ...,org.openqa.selenium.WebDriverException: \000Ajava.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:25124\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-OK589P8'\002C ip: '192.168.2.11'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.1'\000ADriver info: driver.version: FirefoxDriver\000A\0009at selenium.ExampleSeleniumTest.setUp(ExampleSeleniumTest.java:37)\000ACaused by: java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:25124\000A\0009at selenium.ExampleSeleniumTest.setUp(ExampleSeleniumTest.java:37)\000ACaused by: java.net.ConnectException: Connection refused: no further information\000A\0009at selenium.ExampleSeleniumTest.setUp(ExampleSeleniumTest.java:37)\000A
+
+
+# Created at 2023-07-18T21:06:20.879
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,selenium.ExampleSeleniumTest,null,null,null
+
+
